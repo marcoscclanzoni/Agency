@@ -1,6 +1,38 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#main-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/office.jpg");
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+#main-banner .nav-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #000;
+  z-index: 10;
+}
+#main-banner .nav-container .brand {
+  color: #fff;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

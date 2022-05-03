@@ -1,3 +1,25 @@
-h1
-    color: red
-    font-family: 'lato'
+@import 'variables'
+@import 'utilities'
+
+@include reset
+
+#main-banner
+
+    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/office.jpg')
+    height: 85vh
+    background-size: cover
+    background-position: center
+    .nav-container
+        display: flex
+        justify-content: space-between
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        padding: 1.5rem 2rem
+        background-color: $black
+        z-index: 10
+        .brand
+            color: $light-color
+            font-size: 2rem
+            

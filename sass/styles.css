@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "lato";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'lato';
 }
 
 a {
@@ -14,14 +15,20 @@ li {
 }
 
 #main-banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/office.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/office.jpg");
   height: 85vh;
   background-size: cover;
   background-position: center;
 }
+
 #main-banner .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,9 +37,9 @@ li {
   background-color: #000;
   z-index: 10;
 }
+
 #main-banner .nav-container .brand {
   color: #fff;
   font-size: 2rem;
 }
-
 /*# sourceMappingURL=styles.css.map */

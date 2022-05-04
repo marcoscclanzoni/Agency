@@ -12,14 +12,25 @@
     .nav-container
         display: flex
         justify-content: space-between
-        position: fixed
+        position: fixed // fixa ele no topo da tela com top=0 e left =0
         top: 0
         left: 0
         width: 100%
         padding: 1.5rem 2rem
         background-color: $black
-        z-index: 10
+        z-index: 10 // faz ele aparecer sempre a frente dos outros elementos
         .brand
             color: $light-color
             font-size: 2rem
-            
+            @include main-hover
+        &-navbar
+            display: flex
+            align-items: center
+            height: 100%
+
+            li
+                margin: 5px 10px
+                a
+                    color: $light-color
+                    @include main-hover 
+                    

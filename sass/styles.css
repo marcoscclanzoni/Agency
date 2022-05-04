@@ -41,5 +41,35 @@ li {
 #main-banner .nav-container .brand {
   color: #fff;
   font-size: 2rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#main-banner .nav-container .brand :hover {
+  color: #ff520f;
+}
+
+#main-banner .nav-container-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#main-banner .nav-container-navbar li {
+  margin: 5px 10px;
+}
+
+#main-banner .nav-container-navbar li a {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#main-banner .nav-container-navbar li a :hover {
+  color: #ff520f;
 }
 /*# sourceMappingURL=styles.css.map */

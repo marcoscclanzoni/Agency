@@ -11,8 +11,29 @@
         list-style: none
 @mixin main-hover
     transition: .3s
-    & :hover
+    &:hover
         color: $primary-color
+
+// placeholder selectors
+
+%title-text-shadow
+    text-shadow: 3px 2px $black
+
+%section-title
+    font-size: 3rem
+    margin-top: 2rem
+    text-align: center
+
+%center-bg
+    background-size: cover
+    background-position: center
+%card-hover
+    .job-card-title, .job-card-cover, .job-card-descripition
+        opacity: 0
+    &:hover
+        .job-card-title , .job-card-cover, .job-card-descripition
+            opacity: 1
+
 //botões
 
 .btn
@@ -37,4 +58,3 @@
         margin-top: 1rem
         border-radius: 2rem
         padding: 1rem 1.5rem
-        

@@ -14,7 +14,7 @@
 }
 
 .jobs-container .jobs-list .other-jobs-container .job-card .job-card-title, .jobs-container .jobs-list .first-job .job-card-title, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-cover, .jobs-container .jobs-list .first-job .job-card-cover, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-description, .jobs-container .jobs-list .first-job .job-card-description {
-  opacity: 0;
+  opacity: 1;
 }
 @media (max-width: 425px) {
   .jobs-container .jobs-list .other-jobs-container .job-card .job-card-title, .jobs-container .jobs-list .first-job .job-card-title, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-cover, .jobs-container .jobs-list .first-job .job-card-cover, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-description, .jobs-container .jobs-list .first-job .job-card-description {
@@ -286,7 +286,7 @@ li {
 }
 .jobs-container .jobs-list .job-card-title {
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 2.2rem;
   transition: 0.5s;
   font-weight: bold;
@@ -295,7 +295,11 @@ li {
   text-align: center;
   color: #FFF;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.jobs-container .jobs-list .job-card-description span {
+  color: red;
 }
 
 footer {

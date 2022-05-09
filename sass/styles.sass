@@ -1,14 +1,14 @@
 @import 'variables'
 @import 'utilities'
-  
+
 @include reset
 
 #main-banner
   background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/office.jpg')
   height: 85vh
-  background-size: cover 
+  background-size: cover
   background-position: center
-  
+
   @include mobile
     height: 100vh
   nav
@@ -113,7 +113,7 @@
       h3
         font-size: 1.5rem
         margin-bottom: 1rem
-      
+
       p
         color: $text-color
 
@@ -122,6 +122,7 @@
         box-shadow: 0 1px 10px #CCC
 
 .jobs-container
+ 
   background-color: $secondary-bg
   padding: 3rem
 
@@ -140,12 +141,17 @@
 
     .first-job
       width: 30%
-      height: 415px
+      height: 515px
       margin: 0 2%
       background-image: url('../img/job1.jpg')
       position: relative
       cursor: pointer
       transition: .5s
+
+      a
+        margin:  8%
+        padding: auto
+
       @extend %center-bg
       @extend %card-hover
 
@@ -163,7 +169,7 @@
 
       .job-card
         width: 46%
-        height: 200px
+        height: 400px
         position: relative
         cursor: pointer
         margin-bottom: 15px
@@ -206,16 +212,12 @@
     .job-card-description
       text-align: center
       color: #FFF
-      padding: 1rem
+      padding: 1.2rem
       font-size: 1.2rem
       font-weight: bold
       span
         color: red
 
-        
-
-      
-    
 footer
   background-color: $footer-bg
   color: $text-color
@@ -243,7 +245,7 @@ footer
       width: 100%
       margin-bottom: 2rem
       text-align: center
-  
+
   .footer-desc-container
     p
       width: 80%
@@ -283,4 +285,3 @@ footer
 
     p
       margin-bottom: 1rem
-
